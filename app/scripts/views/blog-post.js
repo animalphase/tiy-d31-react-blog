@@ -6,16 +6,26 @@ const BlogPost = React.createClass({
   // set up local state for this component
   getInitialState: function () {
     return {
-      hidden: true
+      hidden: true,
+      buttonLabel: 'read post'
     }
   },
 
 
   // define function that gets executed on below button click
   toggleVisibleState: function () {
-    this.setState({
-      hidden: !this.state.hidden
-    });
+
+    if(this.state.hidden === true) {
+      this.setState({
+        hidden: false,
+        buttonLabel: 'hide post'
+      });
+    } else {
+      this.setState({
+        hidden: true,
+        buttonLabel: 'read post'
+      });
+    }
   },
 
 
@@ -35,7 +45,7 @@ const BlogPost = React.createClass({
           <h2>{this.props.title}</h2>
           <h3>{this.props.subHead}</h3>
         </header>
-        <section className='toggle-blog-controls' onClick={this.toggleVisibleState}><button className='btn-toggle-post-content'>toggle</button></section>
+        <section className='toggle-blog-controls' ><button onClick={this.toggleVisibleState}>{this.state.buttonLabel}</button></section>
         <section className="article-body"><div className={visibility}>{this.props.body}</div></section>
       </article>
     );
