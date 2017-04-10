@@ -14,7 +14,6 @@ const BlogPost = React.createClass({
 
   // define function that gets executed on below button click
   toggleVisibleState: function () {
-
     if(this.state.hidden === true) {
       this.setState({
         hidden: false,

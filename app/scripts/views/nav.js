@@ -5,10 +5,8 @@ const Nav = React.createClass({
   render: function () {
     return (
       <nav className="main-nav">
-        <Link text="link" href="#" className="nav-link"/>
-        <Link text="link" href="#" className="nav-link"/>
-        <Link text="link" href="#" className="nav-link"/>
-        <Link text="link" href="#" className="nav-link"/>
+        <Link text="read" href="#" className="nav-link"/>
+        <Link text="submit" href="#" className="nav-link"/>
       </nav>
     );
   }
