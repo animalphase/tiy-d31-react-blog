@@ -1,6 +1,14 @@
 
-#app {
+.hidden {
+  display: none;
+}
+
+.page-wrapper {
   padding: 1.6rem;
+}
+
+.page-header {
+  margin-bottom: 5rem;
 }
 
 .main-nav {
@@ -16,4 +24,14 @@
   &:last-child {
     margin-right: 0;
   }
+}
+
+.blog-post {
+  margin-bottom: 5rem;
+  padding-bottom: 2rem;
+  border-bottom: .1rem solid $color-light;
+}
+
+.toggle-blog-controls {
+  margin-bottom: 2rem;
 }
