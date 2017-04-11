@@ -16,7 +16,7 @@ const SubmitPost = React.createClass({
           </div>
           <div>
             <label htmlFor='post-body'></label>
-            <textarea id='post-body' name="post boty" rows="8" cols="80"></textarea>
+            <textarea id='post-body' name="post body" rows="8" cols="80"></textarea>
           </div>
           <button type="submit" name="submit post button">Submit post</button>
         </form>

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Link = React.createClass({
   render: function () {
-    return ( <a href={this.props.href} className={this.props.className}>{this.props.text}</a> );
+    return ( <a href={this.props.href} className={this.props.className} onClick={this.props.onClick}>{this.props.text}</a> );
   }
 });
 

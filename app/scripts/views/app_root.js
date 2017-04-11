@@ -21,7 +21,6 @@ export default React.createClass({
   },
 
   render: function () {
-    console.log(this.state);
     var currentView = <BlogPosts/>;
     if (this.state.viewing === 'BlogPosts') {
       currentView = <BlogPosts/>;
@@ -32,10 +31,8 @@ export default React.createClass({
     return (
       <main className='page-wrapper'>
         <header className='page-header'>
-          <button onClick={() => this.setView('BlogPosts')}>test</button>
-          <button onClick={() => this.setView('SubmitPost')}>test</button>
           <h1>simple 'blog' with react</h1>
-          <Nav/>
+          <Nav setViewFunction={this.setView}/>
         </header>
         {currentView}
       </main>

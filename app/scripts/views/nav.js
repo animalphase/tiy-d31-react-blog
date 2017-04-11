@@ -5,8 +5,8 @@ const Nav = React.createClass({
   render: function () {
     return (
       <nav className="main-nav">
-        <Link text="read" href="#" className="nav-link"/>
-        <Link text="submit" href="#" className="nav-link"/>
+        <Link onClick={() => this.props.setViewFunction('BlogPosts')} text="read" href='#' className="nav-link"/>
+        <Link onClick={() => this.props.setViewFunction('SubmitPost')} text="submit" href='#' className="nav-link"/>
       </nav>
     );
   }
